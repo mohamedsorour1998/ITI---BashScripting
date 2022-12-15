@@ -1,10 +1,12 @@
 #!/bin/bash
 
 echo "Enter user name"
-read usrName
-if [ `grep -w $usrName /etc/passwd` ]
+read name
+if [ `grep -w $name /etc/passwd` ]
 then
-	ls -l ~
+	ls -l `grep -w $name /etc/passwd | cut-d: -f6`
 	ps -u $usrName
+	cp -r `grep -w $name /etc/passwd | cut-d: -f6` /temp
+	else
+	echo "this user does not exsit"
 fi
-$SHELL
