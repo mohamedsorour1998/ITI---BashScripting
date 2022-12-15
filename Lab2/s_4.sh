@@ -5,4 +5,3 @@ then
 else
 	cd $1
 fi
-$SHELL
