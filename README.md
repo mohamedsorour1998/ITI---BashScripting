@@ -1,6 +1,8 @@
 # ITI-BASH
 
 LAB1:
+
+
 Using sed utility
 1- Display the lines that contain the word “lp” in /etc/passwd file.
 2- Display /etc/passwd file except the third line.
