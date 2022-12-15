@@ -2,7 +2,7 @@
 
 if [ $# -eq 0 ]
 then
-	echo error
+	echo it is an error
 else
 	cp $*
 fi
